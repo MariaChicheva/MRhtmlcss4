@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fourlab.css" />
+    <title>LABA4</title>
+</head>
+<body>
+    <form class="form">
+        <div class="form__header">
+          <h1><p align ="center">Анкета по GenshinImpact</p></h1>
+          <hr />
+        </div>
+        <div class="form__body">
+            <div class="form__colonka">
+              <div class="form__group">
+                <label for="name">Ваш Ник</label><br />
+                <input type="text" name="name" id="name" class="form__control" />
+              </div>
+              <div class="form__group">
+                <label for="bio">Как вы познакомились с игрой?</label><br />
+                <textarea
+                  name="bio"
+                  id="bio"
+                  cols="20"
+                  rows="5"
+                  class="form__control"
+                  placeholder="От кого узнали об игре?"
+                ></textarea> 
+              </div>
+              <div class="form__group">
+              <label for="time">Дата начала игры</label><br />
+                <input type="date" name="age" id="age" class="form__control"/>
+              </div>
+            </div>
+            <div class="form__colonka">
+                <div class="form__group">
+                    <label for="rp">Какой у вас ранг приключений?</label><br />
+                    <input type="number" name="rp" id="rp" min = "1" max="60" class="form__control" />
+                  </div>
+                <div class="form__group">
+                    <label for="region">Ваш любимый регион?</label><br />
+                    <select class="select-css">
+                        <option value="1"> </option>
+                        <option value="2">Монштадт</option>
+                        <option value="3">Ли Юэ</option>
+                        <option value="4">Инадзума</option>
+                        <option value="5">Разлом</option>
+                        <option value="1">Сумеру</option>
+                        <option value="2">Пустыня</option>
+                        <option value="3">Энкономия</option>
+                      </select>
+                  </div>
+                  
+                  <div class="form__group">
+                    <label for="weapon">Какой вид ружия вам больше всего нравится?</label><br />
+                    <div> <input type="radio" name="weapon"  id="weapon1" value="sword"  />Меч<Br></div>
+                    <div> <input type="radio" name="weapon"  id="weapon2" value="bigsword"  />Двуручный меч<Br></div>
+                    <div> <input type="radio" name="weapon"  id="weapon3" value="bow"  />Лук<Br></div>
+                    <div> <input type="radio" name="weapon"  id="weapon4" value="polearm"  />Копье<Br></div>
+                    <div> <input type="radio" name="weapon"  id="weapon5" value="book"  />Книга<Br></div>
+                  </div>
+                  <div class="form__footer">
+                    <div class="form__checkbox">
+                    <input type="checkbox" name="box" id="box" />
+                    <label for="box" class="form__checkbox--label">Я хочу получать информацию об обновлениях в игре</label
+                    ></div>
+                  </div>
+
+            </div>
+            <div class="form__colonka">
+                <div class="form__group">
+                    <label for="character">Какой ваш любимый персонаж?</label><br />
+                    <input type="text" name="character" id="character" placeholder="Венти))?" class="form__control" />
+                  </div>
+                  <div class="form__group">
+                    <label for="hi">Какая у вас любимая стихия?</label><br />
+                    <textarea
+                      name="hi"
+                      id="hi"
+                      cols="28"
+                      rows="5"
+                      class="form__control"
+                      placeholder="Анемо/Дендро/Пиро/Гидро/Крио?"
+                ></textarea> 
+                  </div>
+            </div>
+        </div>
+            <button type="submit" class="form__submit">
+                Отправить
+              </button>
+            </form>
+</body>
+</html>
+
